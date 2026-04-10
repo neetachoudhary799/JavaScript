@@ -1,6 +1,9 @@
 let arr1 = [1, 2, 3, 4];
 let arr2 = [3, 4, 5, 6];
 
+//Finding the intersection of arrays = elements that are common in both arrays 
+
+
 //first method foreach
 // The forEach() method executes a provided function once for each array element. In this case, we use it to iterate through each value in arr1 and then for each value, we iterate through arr2 to check for matches. If a match is found (i.e., if val is equal to secval), we push the matching value into the matcharrayval array. This method is straightforward but can be less efficient than other methods due to the nested loops.
 console.log(findmatchval(arr1,arr2));
