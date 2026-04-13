@@ -15,3 +15,5 @@ function fizzBuzz(n) {
 
     return result;
 }
+
+console.log(fizzBuzz(15));
