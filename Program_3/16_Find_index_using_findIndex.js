@@ -11,3 +11,11 @@ console.log(result2);
 
 let result3 = arr.findIndex(num => num === 7 ); //check postion index(return 4 index)
 console.log(result3);
+
+let users = [
+  {id: 1, name: "A"},
+  {id: 2, name: "B"},
+  {id: 3, name: "C"}
+];
+let index = users.findIndex(user => user.id === 2);
+console.log(index);
