@@ -34,3 +34,10 @@ function findLargestNumber3(array){
         }
        return acc;
 }
+
+//solution 4(Math.max Method)
+console.log(findLargestNumber4(array));
+function findLargestNumber4(array){
+    let result = Math.max(...array);
+       return result;
+}
