@@ -44,3 +44,12 @@ function findduplicate3(array){
     }
     return dulpicate;
 }
+
+//solution 4
+console.log(findduplicate4(array));
+function findduplicate4(array){
+    return array.filter((item,index)=>{
+        return array.indexOf(item) !== index;
+    }
+    );
+}
