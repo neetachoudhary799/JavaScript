@@ -1,4 +1,5 @@
 //forloop : A for loop is used to repeat a block of code multiple times.
+//no trturn value, we push the code on array and show values
 //Syntax: for (initialization; condition; increment/decrement) {
 //  // code to be executed
 //}
