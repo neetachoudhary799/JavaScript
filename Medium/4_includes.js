@@ -17,3 +17,9 @@ console.log(arr.includes(60)); // Output: false
 //Using Start Index
 let array = [1, 2, 3, 2];
 console.log(array.includes(2, 2)); // true
+
+
+//indesxOf() vs includes() 
+// both are used to check the presence of an element in an array or string, but they differ in their return values and behavior.
+//indexOf() returns the index of the first occurrence of the specified value, while includes() returns a boolean indicating whether the specified value is found in the array or string. 
+//indexOf() returns -1 if the value is not found, while includes() returns false.
