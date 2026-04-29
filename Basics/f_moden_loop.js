@@ -1,4 +1,4 @@
-//for...of (best for arrays)  //show values
+//for...of (best for arrays)  //show values //no return values for objects ,we push values in array and show values
 for (let num of [1, 2, 3]) {
   console.log(num);
 }
