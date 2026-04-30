@@ -63,3 +63,8 @@ let max = numbers.reduce((acc, cur) => {
   return cur > acc ? cur : acc;
 }, numbers[0]);
 console.log(max); // 9
+
+//reverse array
+let arr1 = [1, 2, 3, 4, 5];
+let reversed = arr1.reduce((acc, cur) => [cur, ...acc], []);
+console.log(reversed); // Output: [5, 4, 3, 2, 1]
