@@ -1,3 +1,5 @@
+//Imp Topic: filter(), find(), map()
+
 //filter: filter() used loop and returns a new array.
 //Mostly used in searching and filterind data.
 //it does not change the original array.
