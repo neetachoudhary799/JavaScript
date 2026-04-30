@@ -16,3 +16,12 @@ let arr = ['a', 'b', 'c', 'd'];
 arr.forEach((element) => {
   console.log(element);
 });
+
+console.log(foreachdata(arr));
+function foreachdata(arr){
+    let newarr=[];
+    arr.forEach((element)=>{
+        newarr.push(element.toUpperCase());
+    })
+    return newarr;
+}
