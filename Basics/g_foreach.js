@@ -8,8 +8,10 @@
 
 //Note: The forEach() method does not return a value. It is used for its side effects, such as modifying the original array or performing actions based on the elements of the array.
 
-//we push the code on array and show values
 //❌ Cannot use break or continue
+//❌ Cannot use return to exit the loop early
+//its shows undefined if we use return statement in forEach loop.
+//we push the code on array and show values
 
 //Example: Print each element of an array
 let arr = ['a', 'b', 'c', 'd'];
