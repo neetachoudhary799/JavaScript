@@ -21,13 +21,13 @@ const add = function(a, b) {
 };
 console.log(add(2, 3)); // Output: 5    
 
-//Arrow function expression
+//1Arrow function expression {}
 const addArrow = (a, b) => {
   return a + b;
 };  
 console.log(addArrow(2, 3)); // Output: 5
 
-//Concise body syntax (implicit return)
+//2 Concise body syntax (implicit return)(no need return and curly braces.)
 const addConcise = (a, b) => a + b;
 console.log(addConcise(2, 3)); // Output: 5
 
@@ -50,7 +50,7 @@ const person = {
 };
 person.greet(); // Output: "Hello, my name is Alice." (after 1 second)
 
-//1. ❌ No this binding (Very Important)
+//1. ❌ No this binding (Very Important)not defined function ().
 const obj = {
   name: "Neeta",
   show: () => {
