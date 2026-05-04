@@ -3,15 +3,16 @@
 //3)toUpperCase()
 //4)toLowerCase()
 //5)concat()
-//6)includes()
-//7)indexOf()
-//8)lastIndexOf()
-//9)split()
-//10)replace()
-//11)for of loop and for in loop
-//12)array.from()
-//13)string.fromCharCode()
-//14)string.fromCodePoint()
+//6)includes()  ------true or false
+//7)split()
+//8)replace()
+//9)for of loop and for in loop
+//10)array.from()
+//11)string.fromCharCode()
+//12)string.fromCodePoint()
+//13)slice()
+
+
 
 
 //1)length → returns the length of a string
@@ -40,25 +41,16 @@ let str7 = "Hello, World!";
 console.log(str7.includes("World")); // Output: true
 console.log(str7.includes("world")); // Output: false (case-sensitive)  
 
-//7)indexOf() → returns the index of the first occurrence of a specified substring, or -1 if it is not found
-let str8 = "Hello, World!";
-console.log(str8.indexOf("World")); // Output: 7
-console.log(str8.indexOf("world")); // Output: -1 (not found, case-sensitive)
 
-//8)lastIndexOf() → returns the index of the last occurrence of a specified substring, or -1 if it is not found
-let str9 = "Hello, World! Hello!";
-console.log(str9.lastIndexOf("Hello")); // Output: 14
-console.log(str9.lastIndexOf("world")); // Output: -1 (not found, case-sensitive)
-
-//9)split() → splits a string into an array of substrings based on a specified separator
+//7)split() → splits a string into an array of substrings based on a specified separator
 let str10 = "Hello, World!";
 console.log(str10.split(", ")); // Output: ["Hello", "World!"]
 
-//10)replace() → returns a new string with some or all matches of a pattern replaced by a replacement
+//8)replace() → returns a new string with some or all matches of a pattern replaced by a replacement
 let str11 = "Hello, World!";
 console.log(str11.replace("World", "Universe")); // Output: "Hello, Universe!"
 
-//11)for of loop and for in loop
+//9)for of loop and for in loop
 let str12 = "Hello";
 for (let char of str12) {
   console.log(char); // Output: H e l l o (each character on a new line)
@@ -68,15 +60,24 @@ for (let index in str12) {
   console.log(index); // Output: 0 1 2 3 4 (each index on a new line)
 }
 
-//12)String.fromCharCode() → returns a string created from the specified sequence of UTF-16 code units
+//10)String.fromCharCode() → returns a string created from the specified sequence of UTF-16 code units
 console.log(String.fromCharCode(72, 101, 108, 108, 111)); // Output: "Hello"
-//13)String.fromCodePoint() → returns a string created from the specified sequence of code points
+//11)String.fromCodePoint() → returns a string created from the specified sequence of code points
 console.log(String.fromCodePoint(72, 101, 108, 108, 111)); // Output: "Hello"
 
-//14)Array.from() → creates a new, shallow-copied Array instance from an array-like or iterable object
+//12)Array.from() → creates a new, shallow-copied Array instance from an array-like or iterable object
 let str13 = "Hello";
 let arrFromString = Array.from(str13);
 console.log(arrFromString); // Output: ["H", "e", "l", "l", "o"]
+
+//13)slice() → extracts a section of a string and returns it as a new string, without modifying the original string
+let str14 = "Hello, World!";
+console.log(str14.slice(0, 5)); // Output: "Hello" (from index 0 to index 5, not included)
+console.log(str14.slice(7, 12)); // Output: "World" (from index 7 to index 12, not included)    
+console.log(str14.slice(7)); // Output: "World!" (from index 7 to the end of the string)
+console.log(str14.slice(-6)); // Output: "World!" (from index -6 to the end of the string)
+
+
 
 
 

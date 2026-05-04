@@ -1,4 +1,6 @@
 //string: it is defined  as a single quote or double quote or backticks (``) and it is used to represent text data. It is a sequence of characters that can include letters, numbers, symbols, and spaces. Strings are immutable, which means that once a string is created, it cannot be changed. However, you can create a new string by concatenating or manipulating existing strings.
+//Strings are immutable (original string doesn’t change)
+//Methods return new strings
 
 //Example of string declaration and manipulation
 let str1 = "Hello";
