@@ -4,6 +4,10 @@
 //4)repeat() -------Important--
 //5)startWitth()
 //6)endsWith()
+//7)padStart() 
+//8)padEnd()
+//9)localeCompare()
+//10)valueOf()
 
 
 //indexOf() → returns the index of the first occurrence of a specified value in a string, or -1 if it is not found
@@ -46,3 +50,18 @@ console.log(str6.endsWith("World!")); // Output: true
 console.log(str6.endsWith("Hello")); // Output: false
 console.log(str6.endsWith("World!", 12)); // Output: false (search for "World!" considering only the first 12 characters)
 console.log(str6.endsWith("Hello", 5)); // Output: true (search for "Hello" considering only the first 5 characters)
+
+//8)padStart() → pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
+let str8 = "5";
+console.log(str8.padStart(3, "0"));// Output: "005" (pad with "0" until the total length is 3)
+console.log(str8.padStart(5, "0")); // Output: "00005" (pad with "0" until the total length is 5)
+console.log(str8.padStart(3)); // Output: "  5" (pad with spaces by default until the total length is 3)
+console.log(str8.padStart(1, "0")); // Output: "5" (no padding needed, total length is already 1)   
+
+
+//9)padEnd() → pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the end of the current string.
+let str9 = "5";
+console.log(str9.padEnd(3, "0"));   // Output: "500" (pad with "0" until the total length is 3)
+console.log(str9.padEnd(5, "0")); // Output: "50000" (pad with "0" until the total length is 5)
+console.log(str9.padEnd(3)); // Output: "5  " (pad with spaces by default until the total length is 3)
+console.log(str9.padEnd(1, "0")); // Output: "5" (no padding needed, total length is already 1) 
