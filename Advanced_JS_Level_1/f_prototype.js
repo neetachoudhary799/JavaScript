@@ -11,7 +11,24 @@
 //👉 Memory efficient
 //👉 Method is shared, not duplicated
 
-//Example of prototype
+
+//Basic Prototype
+let person = {
+    greet() {
+        console.log("Hello");
+    }
+};
+let user = {
+    name: "Neeta"
+};
+// link prototype
+user.__proto__ = person;
+user.greet(); // Hello
+//👉 user does NOT have greet()
+//👉 It gets it from person using prototype
+
+
+//Example of prototype Using Constructor Function
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -28,3 +45,12 @@ person2.greet();
 //Hello, my name is Bob and I am 25 years old.
 
 //In this example, the greet method is defined on the Person prototype, so both person1 and person2 can access it without having their own copy of the method. This is memory efficient and allows for shared behavior among instances of the Person constructor.
+
+//Using Object.create()
+let animal = {
+    speak() {
+        console.log("Animal sound");
+    }
+};
+let dog = Object.create(animal);
+dog.speak(); // Animal sound
