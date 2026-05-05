@@ -15,9 +15,12 @@
     let name = "Neeta";
     console.log(name);
 })();
-
 // console.log(name); ❌ Error (private)
 
 (function(name) {
     console.log("Hello " + name);
 })("Neeta");
+//👉 Run code immediately
+
+(function(){})()
+//👉 Without them → syntax error ❌
