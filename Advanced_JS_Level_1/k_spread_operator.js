@@ -4,6 +4,7 @@
 //use cases:
 //👉 Copying arrays /coping string /coping object
 //👉 Merging arrays / merging string / merging object
+//👉 String to Array
 //👉 Spreading elements in function calls
 //👉 unique values in arrays
 //👉 Combining objects
@@ -34,6 +35,12 @@ console.log(mergedstr); // "Hello World"
 let obj3={c:3,d:4};
 let mergedobj={...obj1,...obj3};
 console.log(mergedobj); // {a: 1, b: 2, c: 3, d: 4}
+
+
+//string to array
+let str4="JavaScript";
+let arr4=[...str4];
+console.log(arr4); // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
 
 //spreading elements in function calls
 function sum(a,b,c){
