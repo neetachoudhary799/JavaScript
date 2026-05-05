@@ -1,4 +1,6 @@
 //A callback is a function passed as an argument to another function, and it is executed later.
+//👉 You don’t call the function immediately,
+//👉 You pass it, and it gets called later.
 
 //example
 function greet(name, callback) {
