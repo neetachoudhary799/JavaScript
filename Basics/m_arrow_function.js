@@ -68,3 +68,8 @@ const test = () => {
 //3. ❌ Cannot be used as constructor
 const Person = () => {};
 new Person(); // ❌ Error
+
+
+(() => {
+    console.log("Arrow IIFE");
+})();
