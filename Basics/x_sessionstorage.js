@@ -1,9 +1,9 @@
 //It is used to store data in sessionStorage. It takes two parameters: key and value.
 //sessionStorage stores data in temporary storage for a single browser session.
-//it is format "string" only // use JSON.stringify/parse for objects
+//it is format "string" only // use JSON.stringify/parse for objects.
 //tab-specific(current tab only)
 //sessionStorage is similar to localStorage, but the data stored in sessionStorage is only available on the current page. it will not work on other tabs or windows.
-//data stored in sessionStorage is cleared when the page session ends (when the browser tab is closed)
+//data stored in sessionStorage is cleared when the page session ends (when the browser tab is closed).
 
 
 //syntax: session
