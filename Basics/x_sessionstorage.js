@@ -26,7 +26,7 @@ let name=sessionStorage.getItem("name");
 let age = sessionStorage.getItem("age");
 console.log(name); //Neeta
 console.log(age); //25
-let obj1=JSON.parse(sessionStorage.getItem("obj"));
+let obj1=JSON.parse(sessionStorage.getItem("obj"));   
 console.log(obj1); // { user_name: 'Dhriti', age: 4 }
 
 //remove data from sessionstorage
