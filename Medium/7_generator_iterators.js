@@ -12,6 +12,3 @@ console.log(iterator.next()); //output {value:3,Done:fasle}
 console.log(iterator.next()); //output {value:undefined,Done:true}
 
 
-
-
-
