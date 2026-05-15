@@ -24,7 +24,6 @@ console.log(iterator.next()); //output {value:undefined,Done:true}
 //means Generator finished ✔️
 //output shows {value:"Hello",Done:true/fasle}
 
-
 function* greet() {
     console.log("Start");
     yield "Hello";
