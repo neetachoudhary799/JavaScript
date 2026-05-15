@@ -47,6 +47,6 @@ switch (day) {
         console.log("Other day");
 }
 
-
+//Important points to remember
 //👉 forEach is a function, not a real loop
 //👉 So break cannot stop it(forEach, map, filter, reduce)
