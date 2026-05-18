@@ -38,3 +38,31 @@ console.log(gen.next());
 console.log(gen.next());
 console.log(gen.next());
 
+//infinite generator
+function* counter(){
+
+    let i = 1;
+
+    while(true){
+        yield i++;
+    }
+}
+
+let gen = counter();
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+//Generator Returns Iterator
+let gen = numbers();
+
+console.log(gen.next());
+
+//Real Use Cases
+
+//✅ infinite counters
+//✅ pagination
+//✅ lazy loading
+//✅ async workflows
+
