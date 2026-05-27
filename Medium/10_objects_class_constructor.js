@@ -1,5 +1,8 @@
 //Class Contrutor
 //After ES6
+//it is main purpose to use constructor and intailize values . its execute first.
+//easy to understand
+//output behaviour is same as function contructor.
 
 class Person{
   constructor(fname,lname,contact){
