@@ -1,0 +1,18 @@
+myFunc();
+
+let myFunc = function() {  //function expression
+    console.log("Hello, World!");
+}
+
+myFunc(); // Output: ReferenceError: Cannot access 'myFunc' before initialization
+
+function myFunc() {  //function declaration
+    console.log("Hello, World!");
+}
+
+myFunc(); // Output: "Hello, World!"
+
+// In the above code, we are trying to call the function 'myFunc' before it is defined. 
+// This results in a ReferenceError because 'myFunc' is in the Temporal Dead Zone (TDZ) until it is declared with 'let'. 
+// The TDZ is the time between entering the scope and the actual declaration of the variable. 
+// During this time, the variable cannot be accessed, and any attempt to do so will result in an error.
