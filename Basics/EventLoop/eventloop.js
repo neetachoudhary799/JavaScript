@@ -8,6 +8,11 @@
 
 //macro task: setTimeout, setInterval, setImmediate, I/O, UI rendering(least priority)
 //micro task: Promise, process.nextTick, MutationObserver(first priority)
+function test() {
+    console.log("called test function");
+}
+
+test();
 
 console.log("Start");
 
@@ -22,6 +27,7 @@ Promise.resolve().then(() => {
 console.log("End");
 
 //output:
+//called test function
 //Start
 //End
 //Inside Promise
