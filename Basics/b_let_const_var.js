@@ -4,18 +4,19 @@
 //let : block-scoped , can be updated but not re-declared
 //const : block-scoped, immutable, cannot be updated or re-declared
 
+//var
 if (true) {
   var a = 5;
 }
-console.log(a); // 5 ❌ (leaks outside block)
+console.log(a); // 5 
 
-
+//let
 let a = 5;
 a = 10; // ✅ Allowed to update
 console.log(a); // 10
 let a = 20; // ❌ Error
 
-
+//const
 const a = 5;
 a = 10; // ❌ Error
 
