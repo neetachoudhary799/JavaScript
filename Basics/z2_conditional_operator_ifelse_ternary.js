@@ -7,3 +7,6 @@ if(x){
 }else{
     console.log("condition is false");
 }
+//ternary operator : it is a short hand for if else condition.
+
+let y=true;
