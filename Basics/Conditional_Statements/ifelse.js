@@ -7,6 +7,14 @@ if(x){
 }else{
     console.log("condition is false");
 }
-//ternary operator : it is a short hand for if else condition.
 
-let y=true;
+
+let age =15;
+
+if(age >= 10){
+    console.log("you Can access the data")
+}else if(age <= 20){
+    console.log("ypu are super admin")
+}else{
+    console.log('default beh')
+}
