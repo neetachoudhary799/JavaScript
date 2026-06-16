@@ -1,3 +1,46 @@
+//Arrow Function
+//syntax
+    //oneline code
+    const getName=()=>"neeta";
+    getName(); //returns "neeta"
+
+    const add=(a,b)=>a+b;
+    add(2,3); //returns 5
+
+    // {} eiske sath always return statement use karna padega
+    const minus=(a,b)=>{
+        return a-b;
+    }
+    minus(5,2); //returns 3
+
+//arguments Keyword
+    //arguments keyword is not available in arrow function
+    //const getArguments=()=>{
+        //console.log(arguments);  //not showing arguments only working in normal function
+    //}
+    const getArguments=(...args)=>{  //used spread operator
+        console.log(args); //returns [1,2,3] shows arguments in array form
+    }   
+    getArguments(1,2,3); //not showing arguments only working in normal function
+//hosting
+    //always declare function before calling it
+    minus(5,2); //reference error
+    const minus=(a,b)=>{
+        return a-b;
+    }
+    minus(5,2); //returns 3
+//this Keyword
+    //this keyword is not available in arrow function
+    //const getThis=()=>{
+        //console.log(this); //not showing this only working in normal function 
+    //}
+    const getThis=function(){
+        console.log(this); //shows this keyword in normal function
+    }
+
+
+    
+
 //arrow function expression
 //Arrow functions ES6 (ECMAScript 2015) and provide a shorter syntax
 // such as not having their own 'this' context.
@@ -73,3 +116,5 @@ new Person(); // ❌ Error
 (() => {
     console.log("Arrow IIFE");
 })();
+
+
