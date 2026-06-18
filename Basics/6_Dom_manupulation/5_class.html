@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="myDiv">hello</div>
+<div class="myDiv"> neeta   </div>
+<script>
+    const div=document.getElementsByClassName('myDiv'); //only change first div
+   div[0].innerText='hi';  //text ko change krne ke liye textContent ya innerText dono use kr skte hai
+  const divv=document.getElementsByClassName('myDiv');
+   divv[1].innerHTML='<h1>Change text</h1>';  //html ko change krne ke liye innerHTML use krte hai
+   </script>
+</body>
+</html>

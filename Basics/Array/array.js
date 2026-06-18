@@ -1,6 +1,8 @@
 //array is collection of items stored at values and accessed by index
-//array is mutable and can hold different data types
+//array is mutable and can hold different data types(Mutable: change value))
 //array is object in javascript and has properties and methods
+//arrays are zero indexed (first element is at index 0)
+
 
 //creating array
 let arr1 = [1, 2, 3, 4, 5];

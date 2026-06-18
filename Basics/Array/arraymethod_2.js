@@ -30,7 +30,7 @@ for(let i = 0; i < arr.length; i++){
     console.log(arr[i]);
 }
 
-//4)map() → return new array and we operate on each element and return new value
+//4)map() → return new array and we operate on each element and return new value(length fixed)
 let arr2 = [1, 2, 3, 4, 5];
 let squaredArr = arr2.map((num) => num * num);
 console.log(squaredArr); // Output: [1, 4, 9, 16, 25]   

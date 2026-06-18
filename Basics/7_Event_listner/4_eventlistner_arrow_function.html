@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Listner</h1>
+    <p>Event Listner is used to add event to the element. its not create duplicate events .every event function perform independently   .</p>
+    <div  id="myDivarrow">click me</div>
+    <script>
+        //arrow function
+        const div=document.getElementById('myDivarrow');
+
+        div.addEventListener('click',()=>{
+            div.innerText='my name is Arrow function';
+            div.style.color='red';
+        });
+
+         div.addEventListener('click',()=>{
+            div.style.backgroundColor='grey';
+        });
+        </script>
+</body>
+</html>

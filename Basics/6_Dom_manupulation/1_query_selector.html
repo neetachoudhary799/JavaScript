@@ -1,0 +1,27 @@
+<!--query selector-->
+<!---query selector is used to select the first element that matches the specified selector(s)--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">hello</div>
+<div id="myDiv"> neeta</div>
+<div id="mysecondDiv"> <h1>I am here</h1></div>
+<script>
+    const div=document.querySelector('#myDiv'); //only change first div
+   div.innerText='hi';  //text ko change krne ke liye textContent ya innerText dono use kr skte hai
+  const divv=document.querySelector('#mysecondDiv');
+   divv.innerHTML='<h1>Change text</h1>';  //html ko change krne ke liye innerHTML use krte hai
+</script>
+<!---output
+<div id="myDiv">hi</div>
+<div id="myDiv">neeta</div> 
+<div id="mysecondDiv"><h1>Change text</h1></div>
+--->
+</body>
+</html>
