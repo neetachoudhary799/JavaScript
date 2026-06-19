@@ -24,3 +24,14 @@
 
 (function(){})()
 //👉 Without them → syntax error ❌
+
+(function add(a,b){
+    let result = a+b;
+    console.log("add two number"+result);
+})(3,2);
+
+
+
+/*---arrow---*/
+(() => {console.log("IIFE using arrow");})();
+((a,b) => {console.log(a+b)})(4,5);

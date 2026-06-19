@@ -8,6 +8,7 @@ function add(a) {
     }
 }
 
-console.log(add(2)(3)(4));
+console.log(add(2)(3)(4)); // returns 9
 //Modern Arrow Function:
 const multiply = a => b => c => a * b * c;
+multiply(2)(3)(4); // returns 24
