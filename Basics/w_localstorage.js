@@ -1,8 +1,10 @@
-//localStorage: stores data locally in ther user browser.
+
+//these information is stored on web storage.
 //key-value pair
 //data is stored in string format only use JSON.stringify/parse for objects.
 //it survives system/browser restart  refresh page other tab .
-//it will not remove our data. until we remove it manually or clear browser data.
+// Storage limit is usually around 5–10 MB (depends on browser).
+
 
 //add data to localStorage
 localStorage.setItem("name","Neeta");
