@@ -7,7 +7,7 @@
 //7)entries() → returns a new Array Iterator object that contains the key/value pairs for each index in the array
 //8)keys() → returns a new Array Iterator object that contains the keys for each index in the array
 //9)values() → returns a new Array Iterator object that contains the values for each index in the array
-
+//10 every()->If you want to check whether all values in arr have a condition, use every()
 
 
 //1)find() → returns the value of the first element in the array that satisfies the provided testing function, or undefined if no such element is found
@@ -66,5 +66,10 @@ console.log(values); // Output: Array Iterator {}
 for (let value of values) {
   console.log(value); // Output: "a" "b" "c"
 }   
+
+//10 Every
+let arr10=Array(10).fill(null);
+let checkarr=arr10.every(value=> value != null);
+console.log(checkarr); //output false
 
 
