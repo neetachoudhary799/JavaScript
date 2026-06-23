@@ -18,10 +18,17 @@
     display: flex;
     font-size: 40px;
     }
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
     </style>
 </head>
 <body>
-    <Div class="container">
+    <div class="container">
+    <div class="hedaing"><h1>Tic Tac Toc Game</h1></div>
+    <div id="responseid" >
         <div class="row">
             <div onclick="handleClick(this)" id="0" class="col"></div>
             <div onclick="handleClick(this)" id="1" class="col"></div>
@@ -37,7 +44,8 @@
             <div onclick="handleClick(this)" id="7" class="col"></div>
             <div onclick="handleClick(this)" id="8" class="col"></div>
         </div> 
-    </Div>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -17,9 +17,7 @@ function checkWinner(arr,firstselected){
     }
     let isFull = arr.every(value => value !== null);
     if(isFull){
-        setTimeout(function(){
         document.body.innerHTML="Draw..";
-        },1000)
     }
 }
 function handleClick(ele){
@@ -32,6 +30,6 @@ function handleClick(ele){
     ele.innerHTML  = firstselected;
     arr[ele.id]=firstselected;
     checkWinner(arr,firstselected);
-    firstselected = firstselected === 'x' ? '0' : 'x';
+    firstselected = firstselected === 'x' ? 'o' : 'x';
     
 }
