@@ -17,7 +17,9 @@ function checkWinner(arr,firstselected){
     }
     let isFull = arr.every(value => value !== null);
     if(isFull){
+        setTimeout(function(){
         document.body.innerHTML="Draw..";
+        },1000)
     }
 }
 function handleClick(ele){
